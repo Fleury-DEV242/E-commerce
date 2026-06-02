@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vibekicks Shop</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="css/global.css" />
+    <link rel="stylesheet" href="css/pages.css" />
+  </head>
+  <body>
+    <header id="topPage">
+      <!-- logo du site -->
+      <div class="logo">
+        <img
+          id="logo"
+          src="assets/logo/logo_1.jpg"
+          alt="Logo de la boutique"
+          height="auto"
+        />
+        <h1>Vibekicks</h1>
+      </div>
+      <!-- Navigation dans le site -->
+      <nav id="navbar">
+        <ul>
+          <li><a href="#">Accueil</a></li>
+          <li><a href="#">Catalogue</a></li>
+          <li id="icon-panier">
+            <a href="#"><ion-icon name="cart-outline" style="font-size: 1.2rem;"></ion-icon></a>
+          </li>
+          <li><a href="#">Connexion</a></li>
+          <li>
+            <button id="button-action">Inscription</button>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- lANDING PAGE -->
+    <section id="landing-page">
+      <div id="Speech">
+        <h1>CADENCE URBAINE, STYLE SANS COMPROMIS.</h1>
+        <h2>
+          Trouvez le rythme qui vous ressemble à travers notre sélection <br />
+          exclusive des meilleures paires Nike, Adidas et plus encore.
+        </h2>
+
+        <div id="section-action-button">
+          <a href="#" id="button-action">Entrer dans le mouvement</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- barre de recherche produit et catalogue -->
+    <main id="main">
+      <section id="top-section">
+        <h3>Découvrez nos meilleurs baskets au meilleur prix.</h3>
+        <div id="search-bar">
+          <input
+            type="text"
+            name="search"
+            id="search"
+            placeholder="Recherchez un produit en particulier..."
+          />
+        </div>
+      </section>
+
+      <section id="bottom-section">
+        <section class="bouton-filtre">
+          <button data-filtre="tout" class="active">Tout</button>
+          <button data-filtre="nike">Nike</button>
+          <button data-filtre="adidas">Adidas</button>
+          <button data-filtre="new-balance">New Balance</button>
+        </section>
+
+        <section id="catalogue-produit">
+          
+        </section>
+      </section>
+    </main>
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

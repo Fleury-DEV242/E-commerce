@@ -1,0 +1,26 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  outline: none;
+}
+@font-face {
+  font-family: "Poppins";
+  font-family: "Montserrat";
+  src:
+    url(../assets/font/Montserrat/static/Montserrat-Black.ttf) format(ttf),
+    url(../assets/font/Poppins/Poppins-Black.ttf) format(ttf);
+}
+:root {
+  --color-bg: #F9F9F9;
+  --color-zone-content: #ffffff;
+  --color-primary: #0b090a;
+  --color-accent: #00bfff;
+  --color-text: #e9ecef;
+  --font-title-primary: "Poppins", sans-serif;
+  --font-title-secondary: "Montserrat", sans-serif;
+  --font-text: "Inter", sans-serif;
+}
