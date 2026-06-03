@@ -112,7 +112,9 @@
 }
 
 /* barre de recherche produit */
-
+#main{
+  width: 100%;
+}
 #main #top-section {
   width: 100%;
   display: flex;
@@ -159,7 +161,7 @@
   margin-top: 70px;
   margin-bottom: 30px;
 }
-#bottom-section .bouton-filtre button{
+#bottom-section .bouton-filtre button {
   background-color: rgb(63, 65, 66);
   color: var(--color-zone-content);
   font-size: 1rem;
@@ -169,6 +171,17 @@
   border: none;
   cursor: pointer;
 }
-#bottom-section .bouton-filtre button.active{
+#bottom-section .bouton-filtre button.active {
   background-color: var(--color-accent);
+}
+
+/* Grid catalogue produit */
+
+#main #bottom-section #catalogue-produit {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  padding-inline: 5px;
+  gap: 10px;
 }
