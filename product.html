@@ -1,10 +1,73 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Fiche produit</title>
-</head>
-<body>
-</body>
+    <link rel="stylesheet" href="css/pages.css">
+  </head>
+  <body style="background-color: #e6e6e6;">
+      <header id="topPage">
+      <!-- logo du site -->
+      <div class="logo">
+        <img
+          id="logo"
+          src="assets/logo/logo_1.jpg"
+          alt="Logo de la boutique"
+          height="auto"
+        />
+        <h1>Vibekicks</h1>
+      </div>
+      <!-- Navigation dans le site -->
+      <nav id="navbar">
+        <ul>
+          <li><a href="#">Accueil</a></li>
+          <li style="margin: 0;"><a href="#">Catalogue</a></li>
+          <li id="icon-panier">
+            <a href="#"
+              ><ion-icon
+                name="cart-outline"
+                style="font-size: 1.2rem"
+              ></ion-icon
+            ></a>
+          </li>
+          <li><a href="#">Connexion</a></li>
+          <li>
+            <button id="button-action">Inscription</button>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <div id="wrapper">
+      <div id="left">
+        <div id="image">
+          <img id="image-product" src="" alt="image du produit" />
+        </div>
+      </div>
+      <div id="right">
+        <div id="name-price">
+          <h1 id="name-product"></h1>
+          <h2 id="price-product"></h2>
+        </div>
+        <div id="info">
+          <h3 id="description"></h3>
+          <p id="stock-available"></p>
+        </div>
+        <button id="buy">
+          <ion-icon name="cart-outline"></ion-icon> Ajouter au panier
+        </button>
+      </div>
+    </div>
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>  
+    <script type="module" src="js/modules/ficheProduct.js"></script>
+  </body>
 </html>
