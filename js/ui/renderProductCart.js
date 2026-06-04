@@ -22,14 +22,14 @@ function initialisationCatalogue() {
     info.append(description);
 
     const price = document.createElement("h4");
-    price.textContent = produit.prix + " FCFA";
+    price.textContent = produit.prix + ".0" + " FCFA";
     info.append(price);
 
     const buttonContainer = document.createElement("div");
     buttonContainer.classList.add("button-container");
     
     const buttonDetails = document.createElement("a");
-    buttonDetails.href = `../../product.html?id=${produit.id}`;
+    buttonDetails.href = `product.html?id=${produit.id}`;
     buttonDetails.classList.add("button-details");
     buttonDetails.textContent = "Détails";
 
