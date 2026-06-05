@@ -4,15 +4,16 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Fiche produit</title>
-    <link rel="stylesheet" href="css/pages.css">
+    <link rel="icon" type="image/png" href="assets/logo/logo_1.png" />
+    <link rel="stylesheet" href="css/pages.css" />
   </head>
-  <body style="background-color: #e6e6e6;">
-      <header id="topPage">
+  <body style="background-color: #e6e6e6">
+    <header id="topPage">
       <!-- logo du site -->
       <div class="logo">
         <img
           id="logo"
-          src="assets/logo/logo_1.jpg"
+          src="assets/logo/logo_1.png"
           alt="Logo de la boutique"
           height="auto"
         />
@@ -21,10 +22,10 @@
       <!-- Navigation dans le site -->
       <nav id="navbar">
         <ul>
-          <li><a href="#">Accueil</a></li>
-          <li style="margin: 0;"><a href="#">Catalogue</a></li>
+          <li><a href="index.html">Accueil</a></li>
+          <li style="margin: 0"><a href="index.html">Catalogue</a></li>
           <li id="icon-panier">
-            <a href="#"
+            <a href="cart.html"
               ><ion-icon
                 name="cart-outline"
                 style="font-size: 1.2rem"
@@ -60,6 +61,43 @@
       </div>
     </div>
 
+    <footer id="foot-page">
+      <div id="left">
+        <div class="logo">
+          <img
+            src="assets/logo/logo_1.jpg"
+            alt="Logo de la boutique"
+            height="auto"
+          />
+          <h1>Vibekicks</h1>
+        </div>
+        <p class="description">
+          Votre boutique de baskets moderne, qui transforme votre style.
+        </p>
+      </div>
+
+      <div id="center">
+        <h3>Liens Utiles</h3>
+        <ul>
+          <li><a href="#">Conditions Generales</a></li>
+          <li><a href="#">Politique de confidentialité</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+
+      <div id="right">
+        <h3>Newsletter</h3>
+        <div id="form-news-letter">
+          <input
+            type="email"
+            id="email"
+            placeholder="Votre email"
+            maxlength="20"
+          />
+          <button class="subscribe">S'abonner</button>
+        </div>
+      </div>
+    </footer>
     <script
       type="module"
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
@@ -67,7 +105,8 @@
     <script
       nomodule
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
-    ></script>  
-    <script type="module" src="js/modules/ficheProduct.js"></script>
+    ></script>
+    <script type="module" src="js/ui/ficheProduct.js"></script>
+    <script type="module" src="js/modules/gestionPanier.js"></script>
   </body>
 </html>

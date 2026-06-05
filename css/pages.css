@@ -1,5 +1,7 @@
 @import url(global.css);
-
+html {
+  scroll-behavior: smooth;
+}
 /* HEADER PARTIE */
 #topPage {
   background-color: var(--color-bg);
@@ -293,6 +295,7 @@ footer #right button {
   align-items: center;
   flex-direction: row;
   margin: 0 auto;
+  margin-bottom: 170px;
   border: 1px solid #e9e9e9;
   border-radius: 5px;
   transform: translateY(30%);
@@ -342,16 +345,16 @@ footer #right button {
   margin-top: 20px;
   margin-bottom: 30px;
 }
-#wrapper #right #stock-available{
-  color: #38B000;
+#wrapper #right #stock-available {
+  color: #38b000;
   font-family: var(--font-text);
 }
-#right #stock-available .md{
-font-size: 19px;
-transform: translateY(4px);
+#right #stock-available .md {
+  font-size: 19px;
+  transform: translateY(4px);
 }
 
-#wrapper #right #buy{
+#wrapper #right #buy {
   color: #fff;
   background-color: var(--color-accent);
   display: flex;
@@ -368,9 +371,98 @@ transform: translateY(4px);
   transform: translateY(160px);
   cursor: pointer;
 }
-
-#right #buy .md{
+#right #buy .md {
   font-size: 16px;
   margin-right: 5px;
   transform: translateY(-1px);
+}
+
+/* Page panier */
+#container-panier {
+  width: 70%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: row;
+  margin: 0 auto;
+  margin-top: 50px;
+  padding-block: 20px;
+  font-family: var(--font-title-primary);
+}
+#container-panier #panier {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  padding: 15px 10px;
+  margin-right: 10px;
+  border: 1px solid black;
+}
+#container-panier #panier #name-number_article {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid gainsboro;
+}
+#container-panier #panier #number-article {
+  color: #757575;
+}
+#container-panier #resume-panier {
+  width: 40%;
+  height: 180px;
+  margin-left: 10px;
+  padding: 15px 10px;
+  border: 1px solid black;
+}
+#container-panier #product {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  padding-bottom: 10px;
+  border-bottom: 1px solid gainsboro;
+}
+#container-panier #product #information {
+  display: flex;
+  flex-direction: row;
+}
+#product #image {
+  width: 80px;
+  margin-right: 10px;
+}
+#product #image img {
+  width: 100%;
+}
+#product #information h3{
+  margin-bottom: 10px;
+}
+#product #information button{
+  background: transparent;
+  display: flex;
+  align-items: center;
+  color: rgb(215, 56, 56);
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+#product #information #product #price-total-amount {
+  display: flex;
+  flex-direction: column;
+}
+#product #price-total-amount #total {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+}
+#product #price-total-amount h2{
+  text-align: right;
+}
+#product #total p {
+  color: #636363;
+}
+#product #total p:first-child {
+  margin-right: 10px;
 }

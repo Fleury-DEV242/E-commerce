@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" href="assets/logo/logo_1.png" />
+    <title>Votre panier de produit</title>
+    <link rel="stylesheet" href="css/global.css" />
+    <link rel="stylesheet" href="css/pages.css" />
+  </head>
+  <body>
+    <div id="container-panier">
+      <div id="panier">
+        <div id="name-number_article">
+          <h3>Panier</h3>
+          <p id="number-article"></p>
+        </div>
+
+        <div id="product-content"></div>
+      </div>
+      <div id="resume-panier">
+        <h3>Résumé du panier</h3>
+        <div id="number-article">
+          <p>Article</p>
+          <p class="number"></p>
+        </div>
+        <div id="somme-total">
+          <p>Total</p>
+          <h3 class="somme"></h3>
+        </div>
+        <button id="command">COMMANDER</button>
+      </div>
+    </div>
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <script type="module" src="js/ui/renderPanier.js"></script>
+  </body>
+</html>
