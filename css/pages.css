@@ -34,7 +34,7 @@ html {
   border-radius: 10px;
 }
 #topPage #navbar {
-  width: 40%;
+  width: 35%;
 }
 #topPage #navbar ul {
   display: flex;
@@ -48,6 +48,17 @@ html {
   font-family: var(--font-title-primary);
   font-weight: 500;
 }
+#topPage ul #notif{
+  color: #fff;
+  background-color: var(--color-accent);
+  width: 17px;
+  height: 17px;
+  position: absolute;
+  transform: translate(10px, -32px);
+  text-align: center;
+  border: 1px solid var(--color-accent);
+  border-radius: 50%;
+}
 #topPage ul button {
   background-color: var(--color-accent);
   color: #fff;
@@ -58,12 +69,31 @@ html {
   cursor: pointer;
   transition: 0.3s;
 }
-#topPage ul button:hover {
+#topPage ul #account{
+  display: flex;
+  align-items: center;
+  font-weight: 900;
+  font-family: var(--font-title-primary);
+}
+#topPage #account #profil{
+  color: #00bfff;
+  background-color: #81dcfa;
+  width: 33px;
+  height: 33px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  margin-right: 5px;
+  border-radius: 50%;
+  border: 1px solid #6adaff;
+}
+/* #topPage ul button:hover {
   transform: scale(1.1);
 }
 #topPage ul button:active {
   transform: scale(1);
-}
+} */
 
 /* LANDING PAGE */
 #landing-page {
@@ -381,48 +411,66 @@ footer #right button {
 #container-panier {
   width: 70%;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: space-around;
   flex-direction: row;
   margin: 0 auto;
-  margin-top: 50px;
+  margin-top: 80px;
+  margin-bottom: 60px;
   padding-block: 20px;
   font-family: var(--font-title-primary);
 }
 #container-panier #panier {
+  background-color: #fff;
   width: 60%;
   display: flex;
   flex-direction: column;
   padding: 15px 10px;
   margin-right: 10px;
-  border: 1px solid black;
+  border: 1px solid rgb(252, 252, 252);
+  border-radius: 6px;
 }
 #container-panier #panier #name-number_article {
   width: 100%;
   display: flex;
   justify-content: space-between;
-  margin-bottom: 30px;
+  margin-bottom: 10px;
   padding-bottom: 10px;
-  border-bottom: 1px solid gainsboro;
+  border-bottom: 1px solid rgb(232, 232, 232);
 }
 #container-panier #panier #number-article {
   color: #757575;
 }
 #container-panier #resume-panier {
-  width: 40%;
-  height: 180px;
+  background-color: #fff;
+  width: 35%;
   margin-left: 10px;
   padding: 15px 10px;
-  border: 1px solid black;
+  border: 1px solid rgb(247, 247, 247);
+  border-radius: 6px;
+}
+#container-panier #product-content {
+  background-color: #f4f4f4;
+  height: 360px;
+  overflow-y: auto;
+}
+#container-panier #product-content .message{
+  color: rgb(176, 176, 176);
+  text-align: center;
+  transform: translateY(150px);
 }
 #container-panier #product {
+  background-color: #ffffff;
   width: 100%;
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  flex-direction: row;
+  align-items: flex-start;
   padding-bottom: 10px;
+  flex-direction: row;
   border-bottom: 1px solid gainsboro;
+}
+#container-panier #product:not(:first-child){
+  padding-top: 10px;
 }
 #container-panier #product #information {
   display: flex;
@@ -430,15 +478,17 @@ footer #right button {
 }
 #product #image {
   width: 80px;
+  height: 80px;
   margin-right: 10px;
 }
 #product #image img {
   width: 100%;
+  height: 100%;
 }
-#product #information h3{
+#product #information h3 {
   margin-bottom: 10px;
 }
-#product #information button{
+#product #information button {
   background: transparent;
   display: flex;
   align-items: center;
@@ -457,7 +507,8 @@ footer #right button {
   align-items: center;
   margin-top: 10px;
 }
-#product #price-total-amount h2{
+#product #price-total-amount h2 {
+  font-size: 22px;
   text-align: right;
 }
 #product #total p {
@@ -465,4 +516,38 @@ footer #right button {
 }
 #product #total p:first-child {
   margin-right: 10px;
+}
+#container-panier #resume-panier h3 {
+  color: #636363;
+  margin-bottom: 44px;
+}
+#container-panier #resume-panier #number-article {
+  color: #636363;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+#container-panier #resume-panier #somme-total {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  margin-bottom: 20px;
+}
+#resume-panier #somme-total p {
+  color: #636363;
+}
+#container-panier #resume-panier button {
+  color: #fff;
+  background-color: var(--color-accent);
+  display: inline-block;
+  width: 100%;
+  font-weight: 800;
+  padding-block: 10px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
 }

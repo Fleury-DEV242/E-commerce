@@ -1,5 +1,6 @@
 import { mesProduits } from "../data/product.js";
 import { addObjetPanier } from "../modules/gestionPanier.js";
+import { monPanier } from "../modules/gestionPanier.js";
 
 const name = document.getElementById("name-product");
 const price = document.getElementById("price-product");
